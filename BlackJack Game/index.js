@@ -10,7 +10,7 @@ let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 
 function getRandomCard() {
-    let randomNumber = Math.floor(Math.random() * 14) + 1
+    let randomNumber = Math.floor(Math.random() * 13) + 1 // generates a number from 1-13
     return randomNumber
 }
 

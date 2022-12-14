@@ -21,12 +21,10 @@ function renderGame() {
     }
     messageEl.textContent = message
     sumEl.textContent = "Sum: " + sum
-    if (cards[2]) {
-        cardEl.textContent = "Cards: " + cards[0] + " " + cards[1] + " " + cards[2]
-    } else {
-        cardEl.textContent = "Cards: " + cards[0] + " " + cards[1]
-
-    } 
+    cardEl.textContent = "Sum: "
+    for (let i = 0; i < cards.length; i++) {
+        cardEl.textContent += cards[i] + " "
+    }
 }
 
 function startGame() {

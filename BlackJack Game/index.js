@@ -7,6 +7,13 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 
+let player = {
+    name: "DeniyiBams",
+    chips: 145
+}
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1 // generates a number from 1-13
     if (randomNumber === 1){
